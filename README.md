@@ -1,9 +1,11 @@
 # 🖥 라즈베리파이를 이용한 실시간 전기·난방·수도 요금 파악 및 원격 제어 시스템
 ### 라즈베리파이, Flask, MQTT를 활용한 IoT 응용 시스템 개발
+<br>
 
 ## ⭐ 프로젝트 소개
 라즈베리파이에 연결한 카메라를 이용해 주거공간 사진을 실시간으로 웹 브라우저에 출력하는 cctv를 통해 실시간으로 주거 공간에서의 사람 유무를 파악한다. 사람이 없다면 자동으로 전등, 수도, 난방을 끌 수 있도록 한다. 또한 전등, 수도, 난방 제어를 통해 사용자의 주거 공간이 아닌 외부 원격에서 전등을 키거나 끄고, 수도를 열고 잠그며, 난방 온도를 설정해 난방을 키고 끌 수 있도록 한다. 사용자는 현재 전등, 수도, 난방이 켜져 있는지 꺼져 있는지를 알림 버튼을 통해 확인할 수 있으며 최종적으로 전기, 수도, 난방 사용량에 따른 해당 요금들을 차트를 통해 실시간으로 확인할 수 있으며 목표 요금과 알림을 받기 위한 퍼센트를 설정하고 현재 요금이 알림을 받기 위한 퍼센트에 도달하면 사용자에게 알려주며 현재 요금이 목표 요금을 넘어설 경우 자동으로 전등, 수도, 난방을 끄도록 한다. 이를 실제 상황에서 원격으로 수도를 잠그고 난방 전원을 끄는 등의 행동을 구현하기에는 어려움이 있기 때문에 led 3개를 각각 전등, 수도, 보일러(난방)로 가정한다. <br>
 최종적으로 cctv를 통해 주거공간에서 사람의 유무를 파악해 원격으로 전등, 수도, 난방 시스템을 제어하고 현재 전등, 수도, 난방 상태를 파악하며 사용량에 따른 요금을 확인할 수 있도록 라즈베리파이를 이용하여 구현해 보았다.
+<br><br>
 
 ## 🖥 주요 기능
 - ### ⭐ 홈 CCTV
@@ -26,15 +28,15 @@
 - ### 실시간 전등, 수도, 난방 요금 계산
   * 차트를 통해 실시간 전등, 수도, 난방 요금을 확인 가능
   * 목표 요금을 설정하여 실시간 요금이 목표 요금을 넘긴다면 자동으로 시스템 제어
+<br><br>
 
 ## 🌟 Stacks
-### Environment
-<img src="https://img.shields.io/badge/Raspberry Pi-A22846?style=for-the-badge&logo=Raspberry Pi&logoColor=white"> 
-
+### Environment <br><br><img src="https://img.shields.io/badge/Raspberry Pi-A22846?style=for-the-badge&logo=Raspberry Pi&logoColor=white"> 
 ### Back
-<img src="https://img.shields.io/badge/Flask-000000?style=for-the-badge&logo=Flask&logoColor=white"> <img src="https://img.shields.io/badge/MQTT-660066?style=for-the-badge&logo=MQTT&logoColor=white"> <img src="https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=Python&logoColor=white"> <br>
+<img src="https://img.shields.io/badge/Flask-000000?style=for-the-badge&logo=Flask&logoColor=white"> <img src="https://img.shields.io/badge/MQTT-660066?style=for-the-badge&logo=MQTT&logoColor=white"> <img src="https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=Python&logoColor=white">
 ### Front
 <img src="https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=HTML5&logoColor=white"> <img src="https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=CSS3&logoColor=white"> <img src="https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=JavaScript&logoColor=white">
+<br><br>
 
 ## 구현 방법
 - ### 🌟 하드웨어
@@ -66,16 +68,21 @@
     * **mqttio.js**: paho 라이브러리를 사용하여 mqtt 브로커에 접속하는 자바스크립트 파일
     * **image.js**: 이미지를 브라우저로 전송하는 자바스크립트 파일
     * **myChart.js**: 실시간 전기, 수도, 난방 요금에 대한 차트를 그리는 자바스크립트 파일
-    * **myStyle.css**: 홈페이지를 꾸미는 css 파일  
+    * **myStyle.css**: 홈페이지를 꾸미는 css 파일
+ <br><br>
+
 
 ## 🖥 회로도
 <img width="1000" height="800" alt="image" src="https://github.com/mmije0ng/SmartHomeControlService/assets/127730905/7854832a-c145-45c1-84b0-c1d84a8a4776">
+<br><br>
 
 ## 🖥 디렉터리 구조
 <img width="1000" height="500" alt="image" src="https://github.com/mmije0ng/SmartHomeControlService/assets/127730905/90141919-19af-456d-8685-e29ed523e72c">
+<br><br>
 
 ## 🖥 응용 시스템 구상
 <img width="1000" height="500" alt="image" src="https://github.com/mmije0ng/SmartHomeControlService/assets/127730905/8af1fdf2-b5fe-45b6-a987-17cec9fdb55e">
+<br><br>
 
 ## 🖥 실행 과정 및 결과
 초기화면 <br>
@@ -100,7 +107,4 @@
 <img width="1000" height="1000" alt="image" src="https://github.com/mmije0ng/SmartHomeControlService/assets/127730905/c4d2394f-a70e-4148-abbc-f18744622335">
 
 ## ⭐ 시연 영상
-<video width="320" height="240" controls muted>
-  <source src="C:\Users\mijeong\Desktop\모스시" type="video/mp4">
-  Your browser does not support the video tag.
-</video>
+![image](https://github.com/mmije0ng/SmartHomeControlService/assets/127730905/0c271763-0a03-4f10-8ee8-1aefe4815880)
