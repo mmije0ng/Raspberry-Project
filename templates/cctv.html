@@ -1,0 +1,17 @@
+<!doctype html>
+<html>
+		<head>
+				<title>홈 cctv</title>
+					<meta http-equiv="refresh" content="0.1;url={%print(request.path)%}"> 
+						</head>
+							<body>
+										{% if(exist==True): %}
+													<h2>{% print('집에 사람이 있습니다!') %}</h2>
+															{% else: %}
+																		<h2>{% print('집에 사람이 없습니다!') %}</h2>
+																				{% endif %}
+																						
+																						<img src="{{url_for('static', filename=fname) }}" width="100%" height="100%"/>
+																							</body>
+</html>
+
