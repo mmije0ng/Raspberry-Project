@@ -1,2 +1,57 @@
-myStyle
+#body{
+   background-color:snow;
+   font-size:17px;
+ }
+ 
+ canvas {
+ background-color:lightblue;
+ margin:10px;
+ }
+        
 
+#connectionArea  {
+  margin-top:20px;
+  margin-bottom:20px;
+  padding:10px;
+  border: 2px solid aliceblue;
+  background-color:rgb(228,223,255);
+  width:875px;
+}
+
+.keyword{
+  color:hotpink;
+  font-weight:bold;
+}
+
+.explanation{
+  text-decoration: underline;
+}
+
+#connectionFlag{
+  margin-top:8px;
+}
+
+ul{
+list-style-type:none;
+}
+
+a{
+  text-decoration:none;
+}
+
+a:visited{
+  color:blue;
+}
+
+table{
+ width:900px;
+ margin-bottom:20px;
+ border-top: 4px solid aliceblue;
+ border-left: 4px solid aliceblue;
+ border-right: 4px solid aliceblue;
+}
+
+td{
+ padding:5px;
+ border-bottom: 4px solid aliceblue;
+}
