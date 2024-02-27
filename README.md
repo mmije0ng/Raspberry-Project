@@ -107,4 +107,4 @@
 <img width="1000" height="1000" alt="image" src="https://github.com/mmije0ng/SmartHomeControlService/assets/127730905/c4d2394f-a70e-4148-abbc-f18744622335">
 
 ## ⭐ 시연 영상
-![image](https://github.com/mmije0ng/SmartHomeControlService/assets/127730905/0c271763-0a03-4f10-8ee8-1aefe4815880)
+https://github.com/mmije0ng/SmartHomeControlService/assets/127730905/bed0a0a2-c4a7-4c54-bb7e-eb3b058b9c75
