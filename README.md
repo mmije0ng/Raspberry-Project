@@ -109,6 +109,3 @@
 
 목표요금과 알림 받을 퍼센트를 설정하고 전기 요금 버튼을 클릭하면 실시간 전기 요금을 차트를 통해 확인 가능 <br>
 <img width="1000" height="1000" alt="image" src="https://github.com/mmije0ng/SmartHomeControlService/assets/127730905/c4d2394f-a70e-4148-abbc-f18744622335">
-
-## ⭐ 시연 영상
-https://github.com/mmije0ng/SmartHomeControlService/assets/127730905/bed0a0a2-c4a7-4c54-bb7e-eb3b058b9c75
